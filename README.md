@@ -1,4 +1,4 @@
-# 🧠 Pix2Pix Artery Reconstruction with Class-Aware Debugging
+# Pix2Pix cross section Reconstruction with Class-Aware Debugging
 
 This repository contains a custom **Pix2Pix** implementation for reconstructing coronary artery cross-sections. It includes a rich training loop with validation, mixed precision, discriminator feature loss, perceptual loss, FID scoring, class-aware debugging, and Weights & Biases logging.
 
