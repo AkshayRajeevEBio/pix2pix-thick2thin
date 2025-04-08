@@ -21,15 +21,7 @@ This repository contains a custom **Pix2Pix** implementation for reconstructing 
 ---
 
 ## 🗂️ Project Structure
-pix_to_pix/
-├── train_pix2pix.py               # Main training script
-├── models/
-│   ├── generator.py               # UNet generator and prediction utilities
-│   ├── discriminator.py           # PatchDiscriminator with feature hooks
-│   ├── perceptual.py              # VGG feature extractor for perceptual loss
-├── datasets/
-│   ├── combined_image_dataset.py  # Dataset loader for combined input-target images
-└── ...
+<pre> pix_to_pix/ ├── train_pix2pix.py # Main training script ├── models/ │ ├── generator.py # UNet generator and prediction utilities │ ├── discriminator.py # PatchDiscriminator with feature hooks │ ├── perceptual.py # VGG feature extractor for perceptual loss ├── datasets/ │ ├── combined_image_dataset.py # Dataset loader for combined input-target images └── ... </pre>
 
 ---
 
@@ -37,21 +29,7 @@ pix_to_pix/
 
 This model expects **combined input-target image pairs** (side-by-side) with associated class labels.
 
-datasets_donut_80_10_10/
-├── train/
-│   ├── image_001.png
-│   ├── image_002.png
-│   └── ...
-├── val/
-│   ├── image_101.png
-│   ├── image_102.png
-│   └── ...
-├── test/
-│   ├── image_201.png
-│   └── ...
-├── labels_train.json              # {"image_001.png": "healthy", ...}
-├── labels_val.json
-└── labels_test.json               # (optional)
+<pre> datasets_donut_80_10_10/ ├── train/ │ ├── image_001.png │ ├── image_002.png │ └── ... ├── val/ │ ├── image_101.png │ ├── image_102.png │ └── ... ├── test/ │ ├── image_201.png │ └── ... ├── labels_train.json # {"image_001.png": "healthy", ...} ├── labels_val.json └── labels_test.json # (optional) </pre>
 
 ---
 
